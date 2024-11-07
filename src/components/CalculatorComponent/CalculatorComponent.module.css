@@ -1,0 +1,11 @@
+.CalculatorComponent {
+}
+
+.calculator {
+    border: 2px;
+    border-style: solid;
+}
+
+.number {
+    margin: 2px;
+}
