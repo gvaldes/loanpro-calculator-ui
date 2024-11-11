@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-import RandomComponent from './components/RandomComponent/RandomComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CalculatorComponent from './components/CalculatorComponent/CalculatorComponent';
+import LoginComponent from './components/LoginComponent/LoginComponent';
+import React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
 
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <RandomComponent></RandomComponent>
-
-        <CalculatorComponent></CalculatorComponent>
-
-      </header>
+     
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LoginComponent />} />
+          <Route path="/calculator" element={<CalculatorComponent />} />
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }

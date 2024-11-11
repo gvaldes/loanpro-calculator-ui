@@ -6,6 +6,14 @@
     border-style: solid;
 }
 
+.displayNumbers {
+    margin-bottom: 10px;
+}
+
+.rownumber {
+    margin-top: 2px;
+}
+
 .number {
     margin: 2px;
 }
